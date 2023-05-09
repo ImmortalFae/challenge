@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#black{
+    background-color: black;
+}
+body{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
+    font-weight: 400;
+}
+
+html{
+    font-size: 14px;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+.user{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,04), rgba(0,0,0,0,4));
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: .5s;
+}
+.social-icons{
+    margin: 30px auto;
+    text-align: center;
+}
+.social-icons img{
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 #7575753d;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 5s;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+.check-box span{
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+#login{
+    left: 50px;
+}
+#register{
+    left: 450px;
+}
+.logo img{
+    width: auto;
+    height: 45px;
+}
+input{
+    border: none;
+    outline: none;
+}
+.header-actions button{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+.header-actions button i{
+    font-size: 15px;
+}
+.header-actions button .badge{
+    width: 24px;
+    height: 24px;
+}
+.header-actions button:hover{
+    background-color: blue;
+}
+.header-actions .price{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 15px;
+}
+.navbar-info{
+    font-size: 30px;
+}
+.navbar-info p{
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 15px;
+}
+.navbar-info i{
+    width: 24px;
+    height: 20px;
+    color: var(--primary);
+}
+.banner-info h1{
+    text-transform: capitalize;
+    margin-bottom: 22px;
+    font-weight: 500;
+}
+
+.banner-content p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 50px;
+}
+section-heading h2{
+    margin-top: 200px;
+}
+.banner-content .btn{
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 14px 32px;
+    margin-left: 32px;
+    border-radius: 6px;
+    border: 2px solid green;
+    
+}
+.banner-content .btn:hover{
+    background-color: rgb(66, 243, 66);
+}
+.product-content{
+    padding-top: 12px;
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+.product-content .product-name{
+    margin-bottom: 3px;
+    text-transform: capitalize;
+}
+
+.product-content h6{
+    font-size: var(--h6size);
+    line-height: var(--h6height)
+}
+carousel-inner{
+    width: 50%;
+}
+.image{
+    width: 100%;
+}
+.carousel-inner{
+    width: 100vh;
+    margin: 0 auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.slider-header{
+    text-transform: capitalize;
+    margin-top: 200px;
+    font-weight: 500;
+}
+.brands-banner{
+    margin-top: 100px;
+    text-align: center;
+}
+.brands-content:hover{
+    color: green;
+}
+.brands-content img{
+    width: 150px;
+    height: 150px;
+    border: 2px dashed black;
+    border-radius: 50%;
+}
+.brands-content img:hover{
+    background: #eee;
+    box-shadow: 1px 2px 5px 5px rgb(118, 235, 118);
+}
+.brands-content h4 {
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-size: 21px;
+}
+.benefit-center{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 50px;
+}
+.benefit{
+    border: 1px solid #87f783;
+    padding: 16px 16px 32px 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+.benefit .icon{
+    color: #40f56d;
+    font-size: 35px;
+}
+.benefit h4{
+    margin-bottom: 5px;
+}
+.benefit .text{
+    font-size: 24px;
+    color: #777;
+}
+.borders{
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.mt-150{
+    margin-top: 150px;
+}
+.mb-150{
+    margin-bottom: 150px;
+}
+.blog-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 55px;
+}
+.blog-meta{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+.blog-meta li{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-right: 30px;
+    color: green;
+}
+.blog-meta li i{
+    color: green;
+    margin-right: 8px;
+    font-size: 24px;
+}
+.blog-meta li span{
+    font-size: 21px;
+    font-weight: 400;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.blog-content p{
+    font-size: 17px;
+    line-height: 28px;
+    color: gray;
+    margin-bottom: 25px;
+}
+.discount-header h2{
+    font-size: 35px;
+    margin-bottom: 5px;
+    color: black;
+}
+.discount-header p{
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+}
+.discount-form{
+    width: 100%;
+    padding: 6px;
+    border-radius: 8px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+.discount input{
+    width: 100%;
+    height: 50px;
+    padding: 0px 20px;
+    line-height: 50px;
+}
+.discount .discount-btn{
+    margin-right: 5px;
+    width: 180px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 0px;
+    border-radius: 8px;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    color: white;
+    background: green;    
+}
+
+.footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+}
+.footer .icon{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+}
+.footer .icon a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+}
+.footer .icon a:hover{
+    color:#fff;
+}
+.footer .icon ul{
+    width:100%;
+}
+.footer .icon ul li{
+    display:inline-block;
+    margin:0px 30px;
+}
+.footer .icon a i{
+    font-size:2em;
+    margin:0% 1%;
+}
+@media (max-width:720px){
+.footer{
+    text-align:left;
+    padding:5%;
+}
+.footer .icon ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+}
+.footer .icon a i{
+    margin:0% 3%;
+}
+}
+ 
+.center{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.circle{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: circle 2s linear infinite;
+}
+@keyframes circle {
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px rgba(236, 107, 61, 0.788);
+    }
+    50%{
+        transform: rotate(100deg);
+        box-shadow: 1px 5px 2px rgb(230, 34, 155);
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px rgb(64, 224, 49);
+    }    
+}
+.circle:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 3);
+}
+.center span{
+    color: #737373;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 200px;
+    animation: text 3s ease-in-out infinite;
+}
+@keyframes text {
+    50%{
+        color: rgb(206, 0, 0);
+    }    
+}

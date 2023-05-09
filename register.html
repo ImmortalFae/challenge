@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="stylesheet" href="./src/style/responsive.css">
+    <link rel="stylesheet" href="./src/vendors/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="./src/vendors/fontawesome/css/solid.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+  </head>
+  <body>
+    <header class="header container ">
+      <div class="headline d-flex gap-5 justify-content-between align-items-center py-4">
+        <a href="#home" class="logo">
+          <img src="./src/img/logo.png" id="#home" alt="logo">
+        </a>
+        <form class="flex-grow-1">
+          <label class="w-100 d-flex border border-1 border-success align-items-center px-2 gap-4">
+            <input type="search" class="flex-grow-1 py-2" placeholder="Search Anything">
+            <i class="fa-solid fa-search"></i>
+          </label>
+        </form>
+        <div class="d-flex gap-2 header-actions align-items-center">
+          <button type="button" class="btn btn-success position-relative rounded-circle">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <span class="position-absolute top-0 start-100 translate-middle  bg-success border border-light rounded-circle">
+              <span class="badge">1</span>
+            </span>
+          </button>
+          <button type="button" class="btn btn-success position-relative rounded-circle">
+            <i class="fa-solid fa-heart"></i>
+            <span class="position-absolute top-0 start-100 translate-middle  bg-success border border-light rounded-circle">
+              <span class="badge">1</span>
+            </span>
+          </button>
+          <button type="button" class="btn btn-success position-relative rounded-circle">
+            <i class="fa-solid fa-shuffle"></i>
+            <span class="position-absolute top-0 start-100 translate-middle  bg-success border border-light rounded-circle">
+              <span class="badge">1</span>
+            </span>
+          </button>
+          <span class="price"> TOTAL PRICE <br>
+            <strong>$333.05</strong>
+          </span>
+        </div>
+      </div>
+      <div class="navbar-content">
+        <div class="d-flex gap-5 justify-content-between align-items-center">
+          <ul class="nav-list d-flex list-unstyled gap-5 fs-5">
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="#featured">Featured</a>
+            </li>
+            <li>
+              <a href="#topItems">Top Items</a>
+            </li>
+            <li>
+              <a href="#brands">Brands</a>
+            </li>
+            <li>
+              <a href="#articles">Articles</a>
+            </li>
+            <li>
+              <a href="#discount">Discount</a>
+            </li>
+            <li>
+              <a href="register.html">Sign Up</a>
+            </li>
+            <li>
+              <a href="./animation.html">Click Here</a>
+            </li>
+          </ul>
+          <div class="navbar-info d-flex">
+            <i class="fa-solid fa-mobile"></i>
+            <p>
+              <small>Call Us</small>
+              <br>
+              <span>(+995) 555 555 555</span>
+            </p>
+          </div>
+          <div class="navbar-info d-flex">
+            <i class="fa-solid fa-at"></i>
+            <p>
+              <small>Email Us</small>
+              <br>
+              <span>ChemiKai@example.com</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="user">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+          <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        <div class="social-icons">
+          <img src="./src/img/fb.png">
+          <img src="./src/img/google.png">
+          <img src="./src/img/twitter.png">
+        </div>
+        <form id="login" class="input-group">
+          <input type="text" class="input-field" placeholder="User Id" required>
+          <input type="text" class="input-field" placeholder="Enter Password" required>
+          <input type="checkbox" class="check-box">
+          <span>Remember Password</span>
+          <button type="submit" class="submit-btn">Log In</button>
+        </form>
+        <form id="register" class="input-group">
+          <input type="text" class="input-field" placeholder="User Id" required>
+          <input type="email" class="input-field" placeholder="Email Id" required>
+          <input type="text" class="input-field" placeholder="Enter Password" required>
+          <input type="checkbox" class="check-box">
+          <span>I agree to the terms & conditions</span>
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      var x = document.getElementById("login");
+      var y = document.getElementById("register");
+      var z = document.getElementById("btn");
+
+      function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+    </script>
+  </body>
+</html>

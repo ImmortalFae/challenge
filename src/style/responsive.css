@@ -1,0 +1,33 @@
+@media screen and (max-width: 1024px){
+    header form {
+        display: none;
+    }
+    .header-actions .price{
+        display: none;
+    }
+     .navbar-content .navbar-info{
+        display:none !important;
+    }
+    .blog-content{
+        grid-template-columns: 1fr;
+    }
+    .banner-section{
+        flex-direction: column;
+        text-align: center;
+    }
+    .blog-meta{
+        justify-content: center;
+    }
+    .footer{
+        text-align:left;
+        padding:5%;
+    }
+    .footer .icon ul li{
+        display:block;
+        margin:10px 0px;
+        text-align:left;
+    }
+    .footer .icon a i{
+        margin:0% 3%;
+    }
+}
